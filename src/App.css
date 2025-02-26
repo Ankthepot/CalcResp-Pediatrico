@@ -1,0 +1,140 @@
+/* General styles */
+    .app-container {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f0f8ff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+    }
+
+    h1 {
+      color: #007bff;
+      text-align: center;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .alert-container {
+      background-color: #ffcccc;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+
+    .alert-container h2 {
+      color: #cc0000;
+      margin-top: 0;
+    }
+
+    .resultados-container {
+      background-color: #e6ffe6;
+      padding: 10px;
+      border-radius: 4px;
+    }
+
+    .resultados-container h2 {
+      color: #008000;
+      margin-top: 0;
+    }
+
+    .broselow-data {
+      width: 100%;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      overflow-x: auto;
+    }
+
+    .broselow-data table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .broselow-data th,
+    .broselow-data td {
+      padding: 8px 12px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    .broselow-data th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+
+    .broselow-data tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    /* Responsive design using media queries */
+    @media (max-width: 768px) {
+      .app-container {
+        margin: 10px;
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 1.5em;
+      }
+
+      /* Stack medication fields vertically on smaller screens */
+      label {
+        margin-bottom: 2px;
+      }
+
+      input[type="number"],
+      select {
+        width: 100%;
+        margin-bottom: 5px;
+        font-size: 0.9em; /* Adjust text size for readability */
+      }
+
+      button {
+        padding: 8px 12px;
+        font-size: 0.9em;
+      }
+
+      .broselow-data {
+        padding: 10px;
+      }
+
+      .broselow-data th,
+      .broselow-data td {
+        padding: 6px 8px;
+        font-size: 0.8em;
+      }
+    }
